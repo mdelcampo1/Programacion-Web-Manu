@@ -62,6 +62,10 @@ body{
     width: 50%;
 }
 */
+*{
+    border: solid red;
+    border-width: 0,1pxs;
+}
 body{
     margin: 0;
     padding: 0;
@@ -79,7 +83,7 @@ section{
     height: 100vh;
 }
 section.sec1{
-    background: url(imagenes/fondofrutos.avif);
+    background: url(imagenes/cr.webp);
     background-size: cover;
 }
 section.sec2{
@@ -140,8 +144,12 @@ nav ul li a.active{
     color: #d37777;
 }
 
-section.producto{
-    background: url(imagenes/productos.jpeg);
+section.simon{
+    background: url(imagenes/simon.jpeg);
+    background-size: cover;
+}
+section.se_parte{
+    background: url(imagenes/claracava.jpeg);
     background-size: cover;
 }
 /* VER QUE ONDA BARRA DE BUSCAR
@@ -186,3 +194,5 @@ section.producto{
        background-position: 10px 50%;
    }
        `}
+       /* VER QUE ONDA BARRA DE BUSCAR
+ */
