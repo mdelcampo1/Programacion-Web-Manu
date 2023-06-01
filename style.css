@@ -57,7 +57,7 @@ nav ul li{
 
 nav ul li a{
     display: block;
-    color: #fff;
+    color: #ad2121;
     padding: 0 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -157,30 +157,18 @@ section.se_parte{
     max-width: 100%;
     height: auto;
   }
-#fit {
+
+  .image-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-#fit {
-    display: flex;
-   max-height: 700px;
-}
-#fit ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-#fit li {
-    height: 40vh;
-    flex-grow: 1;
+    justify-content: center;
   }
   
-#fit img {
-    max-height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
+  .image-wrapper {
+    flex: 1;
   }
-#fit {
-    
-}
+  
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  
