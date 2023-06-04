@@ -172,3 +172,7 @@ section.se_parte{
     height: auto;
   }
   
+#unete{
+    width: 300px;
+    height: fit-content;
+}
