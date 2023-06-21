@@ -1,7 +1,5 @@
-let primernumero = Number(prompt('Ingrese un valor: '))
-console.log(primerNumero)
-
-function conologear(valor){
-	console.log(valor)
-}
-conologear(hola)
+window.addEventListener("load", function(){
+	document.getElementById("viewAlerta").addEventListener("click", function(){
+		alert("Solicitud enviada! Dentro de poco tendras novedades en tu casilla de mail.");
+	})	
+})
