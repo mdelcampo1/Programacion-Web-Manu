@@ -176,3 +176,14 @@ section.se_parte{
     width: 300px;
     height: fit-content;
 }
+.custom-background-color {
+    background-color: #7f0a0a;
+}
+p {
+    font-size: auto;
+    line-height: auto;
+    max-width: 100%;
+    width: auto;
+    text-align: justify;
+  }
+  
