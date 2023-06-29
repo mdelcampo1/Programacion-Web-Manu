@@ -10,6 +10,23 @@
 
     <title>JUST LIKE HOME | EVENTOS</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+      var fechaObjetivo = new Date("2023-07-27T12:00:00");
+      function actualizarContador() {  
+          var fechaActual = new Date();
+  
+          var diferencia = fechaObjetivo - fechaActual;
+  
+          var segundos = Math.floor(diferencia / 1000) % 60;
+          var minutos = Math.floor(diferencia / (1000 * 60)) % 60;
+          var horas = Math.floor(diferencia / (1000 * 60 * 60)) % 24;
+          var dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+  
+          document.getElementById("contador").textContent = dias + " días, " + horas + " horas, " + minutos + " minutos, " + segundos + " segundos";
+      }
+
+      setInterval(actualizarContador, 1000);
+  </script>
 </head>
 <body>
     <div class="container">
@@ -49,31 +66,17 @@
     </header>
     <main class="image-container">
       <div class="image-wrapper">
-        <img src="imagenes/rubio.jpg" class="image" alt="Rubio">
-        
+          <img src="imagenes/rubio.jpg" class="image" alt="Rubio">
       </div>
       <div class="image-wrapper">
-        <img src="imagenes/indie.jpg" class="image" alt="Indie">
-        <div class="image-caption"><div class="container">
-          <h1 id="headline">Countdown to birthday</h1>
-          <div id="countdown">
-        <ul>
-        <li><span id="days"></span> days</li>
-        <li><span id="hours"></span> Hours</li>
-        <li><span id="minutes"></span> Minutes</li>
-        <li><span id="seconds"></span> Seconds</li>
-        </ul>
-         </div>
-        
-        <div id="content" class="emoji">
-          <span>it's your birthday</span>
-        </div>
-        
-        
-        
-        </div></div>
-      </div>
-    </main>
+          <img src="imagenes/indie.jpg" class="image" alt="Indie">
+          <div class="image-caption"><div class="container"><div id="contador_evento" class="row col-12">
+              <h1>Contador hasta próximo evento</h1>
+              <p id="contador"></p>
+          </div>
+      </div> </div>
+          
+  </main>
     
     
     <footer class="footer">
