@@ -10,51 +10,33 @@
     <title>JUST LIKE HOME | SE PARTE DE NOSOTROS</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="./script.js"></script>
-</head>
-
-<section>
-
-  <div class="row">
+</head> 
       <body>
-        <header>
-            <img id="logo" src="imagenes/escuchando.png" alt="Logo">
-            <div class="sticky-top custom-background-color">
-              <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                       
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="eventos.html">EVENTOS</a></li>
-                          <li>
-                              <hr class="dropdown-divider">
-                          </li>
-                          <li><a class="dropdown-item" href="se_parte.html">SE PARTE DE NOSOTROS</a>
-                          </li>
-
-                      </ul>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                  </div>
-                </div>
-              </nav>
-              
+        <header class="navbar-sticky">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary rounded">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="eventos.html">EVENTOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="se_parte.html">SE PARTE DE NOSOTROS</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </nav>
         </header>
+        
+        <div class="container">
+          <!-- Aquí puedes agregar tu contenido -->
+        </div>
         <main>
             <section class="sec2">
               <div class="clearfix">
@@ -79,17 +61,19 @@ En "Just Like Home", creemos que la música tiene el poder de unir a las persona
                 
               </div>
               <p class="h2">Escribi abajo tu mail para contactarnos. Tambien estaria bueno un poco de informacion copada tuya y por que queres unirte a Just Like Home! </p>
+              <div class="Permiso">
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
               </div>
               <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Explayate un poco ;)</label>
+                <label for="exampleFormControlTextarea1" class="form-label Permiso">Explayate un poco </label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
               <div>
                 <input type="button" value="Enviar solicitud" id="viewAlerta">
               </div>
+            </div>
         </main>
         <footer class="footer">
           <div class="container">
@@ -105,7 +89,7 @@ En "Just Like Home", creemos que la música tiene el poder de unir a las persona
           </div>
       </footer>
     </body>
-  </div>
-</section>
+ 
+
 
 </html>
